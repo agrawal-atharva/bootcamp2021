@@ -1,0 +1,60 @@
+nav {
+    float: right;
+}
+form {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    text-align: left;
+    border: 2px solid silver;
+    border-radius: 6px;
+}
+#fHeader {
+    height: 50px;
+    border: 2px solid silver;
+    background-color: silver;
+    color: white;
+}
+h3 {
+    padding-left: 12px;
+}
+#content {
+    padding-left: 12px;
+    margin-top: 16px;
+}
+select {
+    width: 325px;
+    color: white;
+    background-color: #00CC99;
+    margin-bottom: 5px;
+    height: 25px;
+    border-color: #00CC99;
+    border-radius: 4px;
+}
+input {
+    margin-bottom: 5px;
+}
+footer {
+    background-color: whitesmoke;
+    border-top: 2px solid silver;
+    height: 40px;
+}
+button {
+    width: 60px;
+    height: 25px;
+    float: right;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    color: white;
+    background-color: #00CC99;
+    padding: 2px 2px 0px 0px;
+    margin: 8px 15px 0px 0px;
+}
+span{
+    color: #00CC99;
+}
+a {
+    text-decoration: none;
+    color: #00CC99;
+}

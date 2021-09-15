@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Float and Clear</title>
+        <style>
+            #div1{
+                border: 5px solid red;
+                padding: 5px;
+                float: right;
+            }
+            #div3{
+                padding: 10px;
+                border: 5px solid plum;
+            }
+            #div2{
+                border: 5px solid red;
+                padding: 5px;
+                float: right;
+            }
+            #div4{
+                padding: 10px;
+                border: 5px solid plum;
+                clear: right;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Float without clear</h1>
+        <div id="div1">Div1</div>
+        <p id="div3">I am div below div which do not have clear property</p>
+        <br>
+        <h1>Float with clear</h1>
+        <div id="div2">Div2</div>
+        <p id="div4">I am div below div which has clear property</p>
+    </body>
+</html>

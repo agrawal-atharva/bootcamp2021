@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Question12</title>
+        <link rel="stylesheet" href="../Question12/CSS/twelve.css">
+    </head>
+    <body>
+        <header>
+            <span>TO THE NEW
+                <nav>
+                    <a href="">Home</a>
+                    <a href="">Quick help</a>
+                </nav>
+            </span>
+        </header>
+        <form>
+            <header id="fHeader">
+                <h3>Bug Report</h3>
+            </header>
+            <div id="content"> 
+                <label for="title">
+                    Title:*
+                </label>
+                <input type="text" name="title" required size="40"><br>
+                <label for="description">
+                    Description:*
+                </label><br>
+                <textarea name="description" rows="3" cols="41"></textarea><br>
+                <label for="operating system">
+                    Operating System:
+                </label>
+                <select name="os">
+                    <option value="Windows XP" selected>Windows XP</option>
+                    <option value="Windows 7">Windows 7</option>
+                    <option value="Windows 10">Windows 10</option>
+                </select><br>
+                <label for="product">
+                    Product:*
+                </label>
+                <select name="product">
+                    <option value="Formoid" selected>Formoid</option>
+                    <option value="Heist">Money Heist</option>
+                    <option value="The Office">The Office</option>
+                </select><br>
+                <label for="version">
+                    Version:*
+                </label><br>
+                <textarea></textarea><br>
+                <label for="license">
+                    License:
+                </label>
+                <input type="radio" name="raido1" value="Free">Free
+                <input type="radio" name="raido2" value="Business">Business
+                <br>
+                <label for="severity">
+                    Severity:
+                </label>
+                <select name="severity">
+                    <option value="Critical" selected>Critical</option>
+                    <option value="Breaking Bad">Breaking Bad</option>
+                    <option value="Friends">Friends</option>
+                </select><br>
+                <label for="attachments">
+                    Attachments:
+                </label>
+                <input type="file">
+            </div>
+            <footer>
+                <button>Send</button>
+            </footer>
+        </form>
+    </body>
+</html>
