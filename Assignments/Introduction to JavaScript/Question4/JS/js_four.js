@@ -1,4 +1,6 @@
-let obj = {name: "Atharva", age: 22 }
-console.log("This is original Object" + "\n" + obj.name);
+let obj = {name: "Atharva", age: 22 };
+document.write("This is original Object");
+document.write(obj);
 let copyObj = Object.assign({}, obj);
-console.log("This is the copy of original Object" + "\n" + copyObj.name);
+document.write("This is the copy of original Object");
+document.write(copyObj);
