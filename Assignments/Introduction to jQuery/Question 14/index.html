@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>jQuery - Question 14</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function(){
+                $("button").click(function(){
+                    $(".change").each(function(i,n){
+                        if($(n).text() > 10)
+                        $(n).css("color","white").css("background-color","red");
+                    })
+                })
+            })
+        </script>
+        <style>
+            table,td{
+                border: 2px solid black;
+                border-collapse: collapse;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <h1>Question 14</h1>
+        <table>
+            <tr>
+                <td class="change">22</td>
+                <td class="change">14</td>
+                <td class="change">16</td>
+                <td class="change">5</td>
+                <td class="change">21</td>
+            </tr>
+            <tr>
+                <td class="change">15</td>
+                <td class="change">17</td>
+                <td class="change">9</td>
+                <td class="change">13</td>
+                <td class="change">6</td>
+            </tr>
+            <tr>
+                <td class="change">18</td>
+                <td class="change">1</td>
+                <td class="change">25</td>
+                <td class="change">19</td>
+                <td class="change">10</td>
+            </tr>
+            <tr>
+                <td class="change">20</td>
+                <td class="change">24</td>
+                <td class="change">3</td>
+                <td class="change">11</td>
+                <td class="change">7</td>
+            </tr>
+            <tr>
+                <td class="change">2</td>
+                <td class="change">23</td>
+                <td class="change">4</td>
+                <td class="change">12</td>
+                <td class="change">8</td>
+            </tr>
+        </table>
+        <button>Change background</button>
+    </body>
+</html>
