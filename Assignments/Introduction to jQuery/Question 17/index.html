@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>jQuery - Question 17</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        #slider {
+            width: 400px;
+            position: relative;
+        }
+        
+        #slider img {
+            max-width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+	        opacity: 0;
+	        transition: 0.1s;
+        }
+
+        #slider img.active {
+	        opacity: 1;
+        }
+        </style>
+
+        <script>
+            $(document).ready(function () {
+                function slider() {
+                    const current = $('#slider img.active');
+                    if (current.length === 0) {
+                        $('#slider img:first-child').addClass('active');
+                    } else {
+                        const next = $(current).removeClass('active').next();
+                        if (next.length === 0) {
+                            $('#slider img:first-child').addClass('active');
+                        } else {
+                            $(next).addClass('active');
+                        }
+                    }
+                }
+                setInterval(slider, 1000);
+            });
+        </script>
+    </head>
+    <body>
+        <h1>Question 17</h1>
+        <div id="slider">
+			<img
+				src="https://images.unsplash.com/photo-1575540325855-4b5d285a3845?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80"
+				class="active"
+			/>
+			<img
+				src="https://images.unsplash.com/photo-1615592389070-bcc97e05ad01?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
+			/>
+			<img
+				src="https://images.unsplash.com/photo-1621478374422-35206faeddfb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+			/>
+		</div>
+		<script src="src/index.js"></script>
+    </body>
+</html>
