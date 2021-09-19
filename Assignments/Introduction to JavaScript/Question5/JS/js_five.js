@@ -29,10 +29,12 @@ console.log(age);
 
 
 function filter_3(){
-    let salaryArray = employee.map(data => data.salary)
-    let salary = salaryArray.filter(salary => salary > 20 && salary < 1000)
-    for (let i = 0; i < salary.length; i++){
-        salary[i] = salary[i] * 5;
-    }
-    return salary;
+    const salaryInc = employee.filter((emp) => {
+        if(emp.salary < 1000 && emp.age > 20){
+            emp.salary *= 5
+            return true
+        }
+        return false
+    })
+    return salaryInc;
 }
