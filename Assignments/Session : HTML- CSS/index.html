@@ -1,41 +1,46 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>HTML Layout Design</title>
     <meta charset="UTF-8">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Layout</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div id="main">
-    <nav class="navbar navbar-light bg-secondary">
-        <a class="navbar-brand" href="#" style="color: white;">
-            <img src="./html5-logo-31820.png" width="60" height="30" class="d-inline-block align-top" alt="">
-      HTML Layout
-    </a>
-    <button type="button" class="btn btn-primary">Login</button>
-  </nav>
-  <nav class="nav flex-column">
-    <a class="nav-link active" href="#">Active</a>
-    <a class="nav-link" href="#">Link</a>
-    <a class="nav-link" href="#">Link</a>
-    <a class="nav-link disabled" href="#">Disabled</a>
-  </nav>
-  <div class="img-div">
-      <img src="./html5-logo-31820.png"/>
-      <img src="./html5-logo-31820.png"/>
-      <img src="./html5-logo-31820.png"/>
-      <img src="./html5-logo-31820.png"/>
-  </div>
-  <div id="content-div">
-    Blog
-</div>
-<div id="form-div">
-    Form Element
-</div>
-<div id="table-div">
-    Table
-</div>
-</div>
+    <div class="top-nav">
+        <img src="./gitlab-icon-1-color-white-rgb.png" class="img"/>
+        <div class="button">Login</div>
+    </div>
+    <div class="side-nav">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+    </div>
+    <div class="nav-right">
+        <div class="img-grid">
+            <div class="view img_1">
+                <img class = "i1" src="./41BJ86jUixL.jpg">
+            </div>
+            <div class="view img_2">
+                <img class = "i1" src="./41BJ86jUixL.jpg">
+            </div>
+            <div class="view img_3">
+                <img class = "i1" src="./41BJ86jUixL.jpg">
+            </div>
+            <div class="view img_4">
+                <img class = "i1" src="./41BJ86jUixL.jpg">
+            </div>
+        </div>
+        <div class="content-grid"></div>
+        <div class="form-grid">
+            <label for="name">Name:</label>
+            <input type="text" name="name" placeholder="Name">
+            <label for="name">Gmail:</label>
+            <input type="text" name="email" placeholder="Email">
+            <input type="submit" name="submit">
+        </div>
+        <div class="table-grid">DIV</div>
+    </div>
 </body>
+</html>
