@@ -1,0 +1,62 @@
+html, body {
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    height: 100%;
+}
+.btn {
+     width: 100px;
+     margin-right: 3px;
+    }
+
+.flex-column {
+     width: 10%;
+     height: 120%;
+     background-color: yellow;
+     float: left;
+    }
+
+.img-div {
+    display: flex;
+    justify-content: space-between;
+    border: 5px solid violet;
+    background-color: pink;
+    width: 90%;
+    height: 30%;
+    float: left;
+}
+
+.img-div > img{
+    display: inline-block;
+    width: 20%;
+    height: 60%;
+    margin: 2%;
+}
+
+#content-div {
+    border: 5px solid darkcyan;
+    background-color: lightblue;
+    width: 90%;
+    height: 30%;
+    float: left;
+}
+
+#form-div {
+    border: 5px solid darkgoldenrod;
+    background-color: lightyellow;
+    width: 90%;
+    height: 20%;
+    float: left;
+}
+
+#table-div {
+    border: 5px solid darkgreen;
+    background-color: lightgreen;
+    width: 90%;
+    height: 40%;
+    float: left;
+}
