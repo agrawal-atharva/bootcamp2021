@@ -1,25 +1,23 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>jQuery - Question 7</title>
-        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-        <style>
-            #newButton{
-                display: inline-block;
-            }
-        </style>
-        <script>
-            $(document).ready(function(){
-                $("button").click(function(){
-                    var nextClick = $("<button id = 'newButton'>New Button</button>");
-                    $('button').append(nextClick);
-                })
-            })
-        </script>
-    </head>
-    <body>
-        <h1>Question 7</h1>
-        <button>Click to get another button</button>
-    </body>
+	<head>
+		<meta charset="utf-8" />
+		<title>jQuery - Question 7</title>
+		<script
+			src="https://code.jquery.com/jquery-3.6.0.js"
+			integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+			crossorigin="anonymous"
+		></script>
+		<script>
+			$(document).ready(function () {
+				$('#button').on('click', function () {
+					$(this).append(' Next Click');
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<h1>Question 7</h1>
+		<div id="button">Button</div>
+	</body>
 </html>
