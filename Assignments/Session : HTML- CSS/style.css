@@ -1,144 +1,217 @@
-* {
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
-.top-nav {
-    height: 20vh;
+.content_wrapper{
+    max-width: 2560px;
+    margin-left: auto;
+    margin-right: auto;
     width: 100%;
-    background-color: dodgerblue;
+    
 }
-.top-nav > .img {
-    margin-top: 1rem;
-    margin-left: 1rem;
-    height: 80px;
-    width: 120px;
-    float: left;
-}
-
-.top-nav > .button {
-    padding: 0.6rem;
-    padding-left: 0.9rem;
-    padding-bottom: 0.9rem;
-    margin-right: 1.5rem;
-    margin-top: 2rem;
-    height: 40px;
-    width: 80px;
-    background-color: rgb(135, 172, 172);
-    float: right;
-    border: 2px solid white;
-    font-size: large;
-    color: white;
-}
-
-.side-nav {
-    height: 80vh;
-    width: 15%;
-    background-color: dodgerblue;
-    text-align: center;
-    float: left;
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 150px;
+    margin-right: 150px;
+    min-height: 15vh;
+    align-items: center;
+    border-bottom: 2px solid grey;
 
 }
 
-.side-nav > a {
-    display: block;
+.nav_left{
+    color: #ffffff ;
+    
+}
+.nav_right {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 25%;
+    /* background-color: red; */
+
+}
+ .nav_right >  li > a{
     text-decoration: none;
-    background-color: rgb(135, 172, 172);
-    color: white;
-    padding: 2rem;
-    width: 100%;
+    color: #ffffff;
+
 }
-
-.button:hover {
-    background-color: lightsteelblue;
+.burger{
+    display: none;
+    cursor: pointer;
 }
-
-a:hover {
-    background-color: lightsteelblue;
-}
-
-.nav-right {
-    width: 85%;
-    height: 80vh;
-    float: left;
-}
-
-.nav-right > .img-grid {
-    background-color: white;
-    width: 100%;
-    height: 20vh;
-    padding: 0 0.5rem;
-    float: left;
-
+.burger div{
+    height: 3px;
+    width: 25px;
+    background-color: #ffffff;
+    margin: 3px;
 }
 
 
-.view {
-    display: inline-block;
-    clear: both;
-    height: 100px;
-    width: 20%;
-    margin-top: 0.5rem;
+ 
+/* --------body------- */
+.bg_image{
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,8)), url(./images/bg.jpg);
+    background-repeat:  no-repeat; 
+    height: 80vh; 
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;    
 }
-
-.view::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-.img_1, .img_2, .img_3 {
-    margin-right: 6.2%;
-}
-
-.i1 {
-    width: 229px;
-    height: 100px;
-    opacity: 0.5;
-}
-
-.nav-right > .content-grid {
-    height: 45vh;
-    width: 100%;
-    background-color: darkcyan  ;
-}
-
-.nav-right > .form-grid {
-    height: 10vh;
-    width: 100%;
+.body{
     text-align: center;
-    padding: 1rem;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    
+
 }
 
-input[type = "text"] {
-    margin-right: 5rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding: 0.4rem;
+.body > h1{
+    color: #ffffff;
+    
+
+}
+.body > span{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.body_content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    height: 30%;  
+    gap: 60px;
+    align-items: center;
+}
+.body_travel{
+    text-align: center;   
+}
+.vertical_line{
+    height: 100px;
+    border-left: 1px solid grey;
+    
+}
+.body_gallery{
+    text-align: center;
 }
 
-label {
-    color: thistle;
+.body_content > div > i{
+    color: rgb(15, 236, 115);
+    padding-top: 50px ;
+    padding-bottom: 15px;
+    font-size: 35px;
+}
+h4{
+    color: #ffffff;
+    padding: 10px;
+}
+.body_content > div > a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.body_button{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
+
+}
+.body_button > button{
+        background-color: transparent;
+        padding: 7px 20px 7px 20px;
+        color:rgb(15, 236, 115) ;
+        border-radius: 15px;
+        border-color: seagreen;
+} 
+button:hover{
+    background-color: green;
 }
 
-input[type = "submit"] {
-    background-color: rgb(135, 172, 172);
-    border: 2px solid white;
-    color: white;
-    height: 30.5px;
-    width: 5.1rem;
-    font-size: smaller;
-    padding: 0.5rem;
-}
 
-.nav-right > .table-grid {
-    height: 25vh;
+/* --------footer--------- */
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding: 100px;
     width: 100%;
-    background-color: violet;
+    
+    
+}
+.left_footer{
+    text-align: center;
+    
+}
+.right_footer{
+    text-align: center;
+    
+}
+.footer > div > img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+.footer > div > h3{
+    color: #8D8D8D;
+    padding: 10px;
+    padding-bottom: 25px;
+}
+.footer > div > p{
+    color: grey;
+    padding-bottom: 25px;
+}
+.footer > div > button{
+    background-color: transparent;
+        padding: 7px 20px 7px 20px;
+        color:rgb(15, 236, 115) ;
+        border-radius: 15px;
+        border-color: seagreen;
+        margin-bottom: 20px;
+}  
+
+
+@media screen and  ( max-width:1024px ){
+    .nav_right {
+        width: 50%;
+}
+nav{
+    margin-left: 20px;
+    margin-right: 20px;
+    min-height: 10vh; 
+}
 }
 
+@media screen and  ( max-width:768px ){ 
+    .content_wrapper{
+        overflow-x: hidden;
+    }
+    .nav_right {
+        position: absolute;
+        right: 0px;
+        height: 90vh;
+        top: 10vh;
+        /* padding: 20px; */
+        z-index: 1 ;
+        background-color: rgb(15, 236, 115);
+        flex-direction: column;
+        align-items: center;
+        width: 30%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .burger{
+        display: block;
+    } 
+    .footer{
+        flex-direction: column;
+    }   
+}
+.nav_active{
+    transform: translateX(0%);
+}

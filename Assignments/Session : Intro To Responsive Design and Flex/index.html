@@ -4,71 +4,83 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Flex Webpage</title>
+		<title>Responsive Layout</title>
 		<link rel="stylesheet" href="./style.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<title>Document</title>
 	</head>
-
 	<body>
-		<div class="container-1">
-			<div class="item1">
-				<h1>This is Urban</h1>
-				<p>
-					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi
-					consectetur eveniet non est optio.
-				</p>
-				<a href="#">Learn More</a>
+		<div class="content_wrapper">
+			<div class="bg_image">
+				<nav>
+					<div class="nav_left">
+						<h3>Responsive layout</h3>
+					</div>
+					<ul class="nav_right">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Generic</a></li>
+						<li><a href="#">Elements</a></li>
+					</ul>
+					<div class="burger">
+						<div class="line1"></div>
+						<div class="line2"></div>
+						<div class="line3"></div>
+					</div>
+				</nav>
+				<div class="body">
+					<h1>WELCOME</h1>
+					<div class="body_content">
+						<div class="body_travel">
+							<i class="fa fa-car" aria-hidden="true"></i>
+							<h4>TRAVEL</h4>
+							<a href="#">Choose a ride</a>
+						</div>
+						<div class="vertical_line"></div>
+						<div class="body_gallery">
+							<i class="fa fa-camera" aria-hidden="true"></i>
+							<h4>Gallery</h4>
+							<a href="#">Choose photos</a>
+						</div>
+					</div>
+					<div class="body_button">
+						<button>Get Started</button>
+					</div>
+				</div>
+			</div>
+			<div class="footer">
+				<div class="left_footer">
+					<img src="./images/phone3-ConvertImage.jpg" alt="" />
+					<h3>
+						Lorem ipsum, <br />
+						dolor sit amet
+					</h3>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem,
+						doloribus! Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+						Aliquam, quod. Lorem ipsum dolor sit amet, consectetur adipisicing
+						elit.
+					</p>
+					<button>Learn more</button>
+				</div>
+				<div class="right_footer">
+					<img src="./images/camera2.jpg" alt="" />
+					<h3>
+						consectetur adipisicing <br />
+						elit. Odio, illum.
+					</h3>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae,
+						beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Quis. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Soluta?
+					</p>
+					<button>Learn More</button>
+				</div>
 			</div>
 		</div>
-		<div class="container-2">
-			<img src="./images/img2.jpg" alt="abc Image" />
-			<div class="item2">
-                <h3>Lorem ipsum dolor sit</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, ea maxime impedit reprehenderit, minus totam beatae similique laborum numquam error eius assumenda perferendis? Ducimus, impedit dolorum. Quod nostrum doloribus eius?</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos esse quas distinctio pariatur! Dolor at, quisquam facilis non, possimus atque veniam magni corrupti modi similique corporis, laudantium magnam quia labore?</p>
-                <a href="#">Learn More</a>
-            </div>
-		</div>
-		<div class="container-3">
-            <img src="./images/img2.jpg" alt="abc Image" />
-			<div class="item3">
-                <h3>Lorem ipsum dolor sit</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, ea maxime impedit reprehenderit, minus totam beatae similique laborum numquam error eius assumenda perferendis? Ducimus, impedit dolorum. Quod nostrum doloribus eius?</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos esse quas distinctio pariatur! Dolor at, quisquam facilis non, possimus atque veniam magni corrupti modi similique corporis, laudantium magnam quia labore?</p>
-                <a href="#">Learn More</a>
-            </div>
-        </div>
-		<div class="container-4">
-            <div class="item1">
-                <h4>Lorem ipsum dolor sit</h4>
-                <h6>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h6>
-            </div>
-            <div class="item2">
-                <div class="content1">
-                    <img class src="./images/img5.jpg"/>
-                    <figcaption>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos distinctio accusantium ad obcaecati quis veritatis </figcaption>
-                    <a href="#">Learn more</a>
-                </div>
-                <div class="content2">
-                    <img class src="./images/img6.jpg"/>
-                    <figcaption>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos distinctio accusantium ad obcaecati quis veritatis </figcaption>
-                    <a href="#">Learn more</a></div>
-                <div class="content3">
-                    <img class src="./images/img7.jpg"/>
-                    <figcaption>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos distinctio accusantium ad obcaecati quis veritatis </figcaption>
-                    <a href="#">Learn more</a></div></div>
-            </div>
-        </div>
-		<div class="container-5">
-            <div class="icon">
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-google"></a>
-                <a href="#" class="fa fa-instagram"></a>
-            </div>
-            <div class="text">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit</p>
-            </div>
-        </div>
+		<script src="./app.js"></script>
 	</body>
 </html>
