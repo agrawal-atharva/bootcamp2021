@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300&display=swap");
+
+.font-properties h1 {
+  font-family: "Lato", sans-serif;
+}
+
+.font1 {
+  font-size: 1.5rem;
+}
+
+.font2 {
+  font-style: italic;
+}
+
+.font3 {
+  font-variant: small-caps;
+}
+
+.font4 {
+  font-weight: 700;
+}
+
+.background-properties {
+  background-image: url("./Background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+}
+
+.background-properties h1 {
+  background-color: aqua;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.background-properties p {
+  background-color: beige;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.psuedo-classes h1:hover {
+  color: red;
+}
+
+.psuedo-classes ul li {
+  list-style: none;
+}
+
+.psuedo-classes ul li a {
+  text-decoration: none;
+  color: black;
+}
+.first-list li a:link {
+  color: yellow;
+}
+.second-list li a:active {
+  background-color: red;
+}
+
+.second-list li a:visited {
+  color: indianred;
+}
+
+.first-list li a:hover {
+  color: green;
+}
+
+.combinators h1 {
+  font-family: "lato", sans-serif;
+}
+
+.combinators > p {
+  font-size: 1.5rem;
+}
+
+.combinators + p {
+  font-style: italic;
+}
+
+input[type="text"] {
+  background-color: red;
+}

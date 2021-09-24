@@ -104,8 +104,7 @@ a:hover {
 
 .nav-right > .content-grid {
     height: 45vh;
-    width: 100%;
-    background-color: darkcyan  ;
+    width: 100%;  ;
 }
 
 .nav-right > .form-grid {
@@ -139,6 +138,48 @@ input[type = "submit"] {
 .nav-right > .table-grid {
     height: 25vh;
     width: 100%;
-    background-color: violet;
+    text-align: center;
 }
 
+table {
+    border: 1px solid white;
+    margin: 0 auto;
+    font-size: smaller;
+    color: white;
+    background-color: rgb(135, 172, 172);
+    margin-top: 2rem;
+}
+
+th {
+    font-weight: bolder;
+    border: 1px dotted white;
+}
+
+td {
+    border: 1px dotted white;
+}
+
+.name {
+    font-weight: bold;
+}
+
+.content-grid > .content-img {
+    float: left;
+    background-image: url(./Wallpaper-Angelic-Face-200x140.jpg);
+    height: 20vh;
+    width: 25%;
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+}
+
+.content-grid > .content-text {
+    float: right;
+    height: 25vh;
+    width: 50%;
+    margin-right: 2rem;
+}
+
+#img-para {
+    background-color: rgb(135, 172, 172);
+    color: white;
+}
