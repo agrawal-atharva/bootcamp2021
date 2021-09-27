@@ -1,0 +1,296 @@
+* {
+	box-sizing: border-box;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.header {
+	height: 10vh;
+	background-color: rgb(253, 243, 107);
+	display: flex;
+	flex-direction: row;
+}
+
+.left-logo {
+	width: 15vw;
+	margin-right: auto;
+	margin-left: 2rem;
+}
+.vr {
+	background-color: grey;
+	height: 1.1rem;
+	width: 0.1rem;
+	margin-top: 1.4rem;
+}
+
+.signin {
+	width: 5vw;
+	text-align: center;
+	color: gray;
+}
+
+.signup {
+	text-align: center;
+	width: 5vw;
+	color: gray;
+}
+
+.right-logo {
+	padding: 1rem;
+	width: 15vw;
+	margin-right: 0.5rem;
+}
+
+.center {
+	height: 60vh;
+	background-image: url(./asset/background-image.png);
+	background-repeat: no-repeat;
+	background-color: rgb(173, 229, 230);
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: center;
+}
+
+.left-item {
+	color: teal;
+	height: 250px;
+	width: 250px;
+	margin: 0 auto;
+	margin-top: 1.5rem;
+	text-align: left;
+}
+
+.right-item {
+	background-color: white;
+	text-align: center;
+	height: 250px;
+	width: 250px;
+	margin: 0 auto;
+	margin-top: 1.3rem;
+}
+
+.footer {
+	height: 30vh;
+	background-color: rgb(35, 108, 216);
+	display: flex;
+}
+
+.footer-left {
+	margin: 0 auto;
+	width: 30%;
+	height: 30vh;
+	color: white;
+	padding: 1.5rem;
+}
+
+.footer-right {
+	margin: 0 auto;
+	display: flex;
+	width: 60%;
+	height: 30vh;
+	color: white;
+	justify-content: center;
+	align-content: center;
+}
+
+.person-1 {
+	width: 40%;
+	margin-right: 1rem;
+}
+
+.person-1 p {
+	line-height: 1.5rem;
+}
+
+.person-2 p {
+	line-height: 1.5rem;
+}
+
+.person-2 {
+	width: 40%;
+}
+
+button {
+	background-color: hotpink;
+	color: white;
+	width: 12rem;
+	height: 3rem;
+	text-align: center;
+	border: none;
+}
+
+.name {
+	display: flex;
+	flex-direction: row;
+	height: 25px;
+}
+
+.name img {
+	margin-left: 1.5rem;
+	border-radius: 50%;
+}
+
+.auth-name {
+	align-items: center;
+	padding: 0.2rem;
+}
+
+input[type='text'] {
+	outline: 0;
+	border: none;
+	background: none;
+	border-bottom: 2px solid grey;
+	line-height: 1.7rem;
+}
+
+input[type='submit'] {
+	margin-top: 1.5rem;
+	width: 6.5rem;
+	height: 1.8rem;
+	font-size: medium;
+	background-color: green;
+	color: white;
+	border: none;
+}
+
+.right-item h4 {
+	color: grey;
+	line-height: 0;
+}
+
+.right-item p {
+	font-size: x-small;
+	color: red;
+	line-height: 0;
+	margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 500px) {
+	.header {
+		height: 5vh;
+		width: 100%;
+	}
+
+	.left-logo {
+		margin-left: 1rem;
+		margin-right: 9rem;
+		height: 5vh;
+		padding: 0.4rem;
+	}
+
+	.signin {
+		font-size: small;
+		width: 10vw;
+		height: 5vh;
+		text-align: center;
+		color: gray;
+		margin-right: 0.3rem;
+	}
+
+	.signup {
+		font-size: small;
+		width: 10vw;
+		height: 5vh;
+		text-align: center;
+		color: gray;
+		margin-left: 0.3rem;
+	}
+
+	.vr {
+		background-color: grey;
+		height: 1.1rem;
+		width: 0.09rem;
+		margin-top: 1rem;
+	}
+
+	.right-logo {
+		padding: 1rem;
+		width: 15vw;
+		margin-left: 1rem;
+	}
+
+	.center {
+		height: 70vh;
+		background-image: url(./asset/background-image.png);
+		background-repeat: no-repeat;
+		background-color: rgb(173, 229, 230);
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-content: center;
+	}
+
+	.left-item {
+		color: teal;
+		height: 250px;
+		width: 250px;
+		margin: 0 auto;
+		margin-top: 1.5rem;
+		text-align: center;
+	}
+
+	.right-item {
+		background-color: white;
+		text-align: center;
+		height: 250px;
+		width: 250px;
+	}
+
+	.footer {
+		height: 70vh;
+		background-color: rgb(35, 108, 216);
+		display: flex;
+		flex-direction: column;
+	}
+
+	.footer-left {
+		margin: 0 auto;
+		width: 100%;
+		height: 25vh;
+		color: white;
+		padding: 1.5rem;
+		text-align: center;
+	}
+
+	.footer-right {
+		margin: 0 auto;
+		display: flex;
+		width: 100%;
+		height: 35vh;
+		color: white;
+		justify-content: center;
+		align-content: center;
+		flex-direction: column;
+	}
+
+	.person-1 {
+		width: 100%;
+        text-align: center;
+	}
+
+	.person-1 p {
+		line-height: 1.5rem;
+	}
+
+	.person-2 p {
+		line-height: 1.5rem;
+	}
+
+	.person-2 {
+		width: 100%;
+        text-align: center;
+	}
+
+    .name {
+        display: flex;
+        flex-direction: row;
+        height: 25px;
+        justify-content: center;
+        align-items: center;
+    }
+}
