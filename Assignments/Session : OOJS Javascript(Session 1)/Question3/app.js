@@ -20,4 +20,4 @@ var person2 = {
 		console.log('Name is:', this.name);
 	},
 };
-person2.print.call(person2);
+person2.print.call(person);
