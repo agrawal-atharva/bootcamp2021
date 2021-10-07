@@ -9,7 +9,7 @@ function developer() {
 }
 
 employer.prototype = new person();
-
 developer.prototype = new employer();
+
 var per = new developer();
 console.log(per);

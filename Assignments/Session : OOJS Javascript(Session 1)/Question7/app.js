@@ -1,7 +1,7 @@
-var places = ['jammu', 'delhi', 'mumbai', 'punjab', 'delhi'];
+var places = ['Jammu', 'Delhi', 'Mumbai', 'Punjab', 'Delhi'];
 console.log(places.toString());
 
-console.log(places.join());
+console.log(places.join('-'));
 
 console.log(places.pop());
 
