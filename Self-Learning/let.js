@@ -16,3 +16,9 @@ function test() {
 }
 
 test();
+
+const myFun = (name, age) => {
+	return `My name is ${name} and I am ${age} years old.`
+}
+
+console.log(myFun('Atharva', 22));
