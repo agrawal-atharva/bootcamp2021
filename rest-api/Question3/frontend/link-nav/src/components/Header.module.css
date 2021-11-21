@@ -1,0 +1,26 @@
+.header{
+    position: sticky;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 60px;
+	top: 0;
+    background-color: lightblue;
+}
+
+.item{
+    display: inline-block;
+    margin: 0px 30px;
+    background-color: rgb(146, 176, 219);
+    padding: 1.3rem;
+    color: white;
+}
+
+.item:hover{
+    background-color: white;
+    color: lightblue;
+}
+
+.list {
+    margin: 0px 15px;
+}
