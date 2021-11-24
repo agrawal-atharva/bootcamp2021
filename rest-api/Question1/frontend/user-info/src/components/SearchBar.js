@@ -1,4 +1,5 @@
 import { Fragment, useState } from 'react';
+import classes from './SearchBar.module.css';
 
 const SearchBar = (props) => {
 	const [username, setUserName] = useState('');
@@ -13,13 +14,16 @@ const SearchBar = (props) => {
 
 	return (
 		<Fragment>
-			<h3>User Information</h3>
-			<input
-				type='text'
-				placeholder='username'
-				value={username}
-				onChange={userNameHandler}
-			/>
+			<div class='form__group'>
+				<input
+					type='text'
+					className={classes.form__input}
+					id='name'
+					placeholder='Username'
+					required=''
+					onChange={userNameHandler}
+				/>
+			</div>
 		</Fragment>
 	);
 };

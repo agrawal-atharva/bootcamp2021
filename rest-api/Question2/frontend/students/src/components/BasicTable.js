@@ -1,46 +1,7 @@
-import { useMemo } from 'react';
-import { useTable } from 'react-table';
-import columns from '../data/column';
 import './BasicTable.css';
-import data from '../data/ApiData';
 
 const BasicTable = () => {
-	columns = useMemo(() => columns, []);
-	data = useMemo(() => '', []);
-
-	const tableInstance = useTable({
-		columns,
-		data,
-	});
-
-	const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } =
-		tableInstance;
-
-	return (
-		<table {...getTableProps()}>
-			<thead>
-				{headerGroups.map((headerGroup) => (
-					<tr {...headerGroup.getHeaderGroupProps()}>
-						{headerGroup.headers.map((columns) => (
-							<th {...columns.getHeaderProps()}>{columns.render('Header')}</th>
-						))}
-					</tr>
-				))}
-			</thead>
-			<tbody {...getTableBodyProps()}>
-				{rows.map((row) => {
-					prepareRow(row);
-					return (
-						<tr {...row.getRowProps()}>
-							{row.cells.map((cell) => {
-								return <td {...cell.getCellProps()}>{cell.render('Cell')}</td>;
-							})}
-						</tr>
-					);
-				})}
-			</tbody>
-		</table>
-	);
+	return <h1>Hi</h1>;
 };
 
 export default BasicTable;

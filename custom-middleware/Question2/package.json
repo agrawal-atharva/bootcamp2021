@@ -1,0 +1,16 @@
+{
+  "name": "buffer-stream",
+  "version": "1.0.0",
+  "description": "",
+  "main": "buffer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "buffer": "^6.0.3",
+    "fs": "0.0.1-security",
+    "http": "0.0.1-security"
+  }
+}

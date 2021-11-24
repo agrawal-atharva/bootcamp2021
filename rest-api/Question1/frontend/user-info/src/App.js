@@ -7,17 +7,11 @@ import UserData from './components/UserData';
 function App() {
 	const [userData, setUserData] = useState([]);
 	const [userName, setUserName] = useState('');
-
-	const inputDataHandler = (username) => {
-		console.log(username);
-		setUserName(username);
-	};
-
-  
+	// const [finalUserData, setFinalUserData] = useState([]);
 
 	useEffect(() => {
 		const url = '/getuser';
-		const users = fetch(url)
+		fetch(url)
 			.then((response) => response.json())
 			.then((data) => {
 				for (const key in data) {
@@ -26,10 +20,23 @@ function App() {
 			});
 	}, []);
 
+	const inputDataHandler = (username) => {
+		// console.log(username);
+		setUserName(username);
+	};
+
+	const finalArray = userData.filter((data) => {
+		return data.username === userName;
+	});
+	// setFinalUserData(finalArray);
+
+	// console.log(finalArray);
+	// console.log(userData);
+
 	return (
 		<Fragment>
 			<SearchBar onSearch={inputDataHandler}></SearchBar>
-			<UserData users={userData}></UserData>
+			<UserData value={finalArray}></UserData>
 		</Fragment>
 	);
 }

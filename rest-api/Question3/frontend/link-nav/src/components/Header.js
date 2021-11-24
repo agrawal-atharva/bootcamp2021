@@ -2,7 +2,7 @@ import { useState } from 'react';
 import styles from './Header.module.css';
 
 const Header = () => {
-	const[homePage, setHomePage] = useState()
+	const [homePage, setHomePage] = useState();
 
 	const homePageHandler = () => {
 		fetch('/home')
@@ -10,8 +10,8 @@ const Header = () => {
 			.then((html) => {
 				const parser = new DOMParser();
 				let doc = parser.parseFromString(html, 'text/html');
-				setHomePage(doc)
-				console.log(doc)
+				setHomePage(doc);
+				console.log(doc);
 				return homePage;
 			});
 	};
