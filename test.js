@@ -24,7 +24,6 @@
 // 	},
 // ]);
 
-
 /*Write query to add a new comment for a post*/
 // db.post.update(
 // 	{ post_id: 1 },
@@ -45,10 +44,40 @@
 // 	{ $set: { description: 'I have my birthday today!!!' } }
 // );
 
-
 // db.post.update(
 // 	{ post_id: 1 },
 // 	{ $set: { comments[0] : {
 // 		$set: {message: 'God bless you!'}
 // 	}}}
 // );
+
+// db.post.updateOne(
+// 	{ post_id: 1, 'comments.comment_id': 01 },
+// 	{ $set: { 'comments.$.message': 'Updating the message' } }
+// );
+
+
+// db.user.insert({
+// 	firstName: 'Atharva',
+// 	lastName: 'Agrawal',
+// 	age: 22,
+// 	email: 'atharva.agrawal@ttn.com',
+// 	created_on: new Date(),
+// })
+
+// db.user.insert({
+// 	firstName: 'Adhvita',
+// 	lastName: 'Ahuja',
+// 	age: 23,
+// 	email: 'adhvita.ahuja@ttn.com',
+// 	created_on: new Date(),
+// })
+
+// db.user.insert({
+// 	firstName: 'Palkin',
+// 	lastName: 'Wadhwa',
+// 	age: 22,
+// 	email: 'palkin@ttn.com',
+// 	created_on: new Date(),
+// })
+
