@@ -5,7 +5,7 @@ import styles from './MainNavigation.module.css';
 const MainNavigation = () =>{
     return(
         <header className={styles.header}>
-            <div className={styles.logo}>Sherry Jain</div>
+            <div className={styles.logo}>User application</div>
             <nav className={styles.nav}>
                 <ul>
                     <li><NavLink to="/home" activeClassName={styles.active}>Home</NavLink></li>

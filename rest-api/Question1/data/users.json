@@ -1,1 +1,26 @@
-[{"firstName":"Sherry","lastName":"Jain","username":"sherr","password":"1234"},{"firstName":"Rahul","lastName":"Goel","username":"rahulg","password":"0123"},{"firstName":"Nancy","lastName":"Singh","username":"nsingh","password":"6789"},{"firstName":"Rahul","lastName":"Garg","username":"rahulgarg","password":"0234"}]
+[
+	{
+		"firstName": "Atharva",
+		"lastName": "Agrawal",
+		"username": "atharva",
+		"password": "atharva123"
+	},
+	{
+		"firstName": "Bharat",
+		"lastName": "Agrawal",
+		"username": "bharat",
+		"password": "bharat123"
+	},
+	{
+		"firstName": "Aayush",
+		"lastName": "agrawal",
+		"username": "aayush",
+		"password": "aayush123"
+	},
+	{
+		"firstName": "Piyush",
+		"lastName": "Agrawal",
+		"username": "piyush",
+		"password": "piyush123"
+	}
+]

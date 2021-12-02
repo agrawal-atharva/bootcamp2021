@@ -1,38 +1,38 @@
 [
-    {
-        "rollno":1,
-        "name":"Abhi",
-        "age":18,
-        "branch":"CSE"
-    },
-    {
-        "rollno":2,
-        "name":"Krish",
-        "age":19,
-        "branch":"ECE"
-    },
-    {
-        "rollno":3,
-        "name":"Ravi",
-        "age":18,
-        "branch":"CSE"
-    },
-    {
-        "rollno":4,
-        "name":"Abha",
-        "age":20,
-        "branch":"IT"
-    },
-    {
-        "rollno":5,
-        "name":"Yash",
-        "age":19,
-        "branch":"IT"
-    },
-    {
-        "rollno":6,
-        "name":"Joy",
-        "age":21,
-        "branch":"CSE"
-    }
+	{
+		"rollno": 1,
+		"name": "Atharva",
+		"age": 22,
+		"branch": "CSE"
+	},
+	{
+		"rollno": 2,
+		"name": "Dhruv",
+		"age": 23,
+		"branch": "Chemical"
+	},
+	{
+		"rollno": 3,
+		"name": "Akhil",
+		"age": 21,
+		"branch": "CSE"
+	},
+	{
+		"rollno": 4,
+		"name": "Adhvita",
+		"age": 23,
+		"branch": "IT"
+	},
+	{
+		"rollno": 5,
+		"name": "Mudit",
+		"age": 20,
+		"branch": "IT"
+	},
+	{
+		"rollno": 6,
+		"name": "Roy",
+		"age": 21,
+		"branch": "Civil"
+	}
 ]

@@ -1,32 +1,25 @@
-import React, { useState } from "react";
+import logo from './logo.svg';
+import './App.css';
 
-const App = () => {
-  const [data, setData] = useState("");
-
-  const handleClick = (e) => {
-    fetch(`http://127.0.0.1:8000/${e}`)
-      .then((response) => response.json())
-      .then((data) => setData(data));
-  };
-
+function App() {
   return (
-    <>
-      <div style={{ display: "flex" }}>
-        <h3 style={{ margin: "20px" }}>
-          <button onClick={() => handleClick("home")}>Home</button>
-        </h3>
-        <h3 style={{ margin: "20px" }}>
-          <button onClick={() => handleClick("about")}>About</button>
-        </h3>
-        <h3 style={{ margin: "20px" }}>
-          <button onClick={() => handleClick("contact")}>Contact us</button>
-        </h3>
-      </div>
-      <div>
-        <h1 style={{ textAlign: "center" }}> {data}</h1>
-      </div>
-    </>
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
   );
-};
+}
 
 export default App;
