@@ -1,56 +1,80 @@
-var express = require("express");
-var app=express();
-const port=8000;
-var users = require("./user.json");
-var about=require('./about.json')
-const fs=require('fs')
-var bodyParser = require('body-parser')
-var cors = require('cors')
+const express = require('express');
+const session = require('express-session');
+const bodyParser = require('body-parser');
+const app = express();
+app.use(
+	session({
+		name: 'id',
+		secret: 'keyboard cat',
+		resave: false,
+		saveUninitialized: false,
+		cookie: {
+			maxAge: 10,
+			secure: false,
+			sameSite: true,
+		},
+	})
+);
+app.use(
+	bodyParser.urlencoded({
+		extended: true,
+	})
+);
+const users = [
+	{ id: 1, name: 'Atharva', email: 'atharva@gmail.com', password: 1234 },
+	{ id: 2, name: 'Bharat', email: 'brat@gmail.com', password: 1999 },
+	{ id: 3, name: 'Kiran', email: 'kiran@gmail.com', password: 2098 },
+];
+//Middleware for session validation
+const redirectLogin = (req, res, next) => {
+	if (!req.session.userId) {
+		res.redirect('/login');
+	} else {
+		next();
+	}
+};
+app.get('/', (req, res) => {
+	const { userId } = req.session;
+	res.write('<h1>Welcome</h1>');
+	res.write(
+		`${!userId ? "<a href='/login'>login</a>" : "<a href='/home'>Home</a>"}`
+	);
+	res.send();
+});
 
-app.use(cors());
+app.get('/fallback', (req, res) => {
+	res.write('<h1>Credentials didn"t matched</h1>');
+});
 
-const { v4: uuidv4 } = require('uuid');
+app.get('/home', redirectLogin, (req, res) => {
+	res.send('<h1>Home</h1>');
+});
 
-var jsonParser = bodyParser.json();
-
-var currenTime = (req,res,next) =>{
-  req.requestTime=Date(Date.now()).toString()
-  next();
-}
-
-app.get('/users',(req,res)=>{
-  let wholeArray = Object.keys(users).map(key => users[key]);
-  res.send(JSON.stringify(wholeArray))
-})
-
-app.post('/add-user',jsonParser,currenTime,(req,res)=>{
-  let data={
-    id:uuidv4(),
-    time:req.requestTime,
-    ...req.body
-  };
-  let key=users.length;
-  let newUsers={
-    data,
-    ...users
-  }
-  let wholeArray = Object.keys(newUsers).map(key => newUsers[key]);
-  fs.writeFileSync('./user.json',JSON.stringify(wholeArray));
-  // console.log(newUsers);
-  res.send("ok")
-})
-
-app.delete('/delete-user/:id',(req,res)=>{
-  const newUsers=users.filter((item)=>item.id!==req.params.id)
-  fs.writeFileSync('./user.json', JSON.stringify(newUsers));
-  res.send(JSON.stringify(newUsers));
-})
-
-app.get('/about',(req,res)=>{
-  res.send(JSON.stringify(about));
-})
-
-app.listen(port,()=>{
-  console.log(`server is listening at port ${port}`)
-})
-
+app.get('/login', (req, res) => {
+	res.write('<h1>Login</h1>');
+	res.write("<form method='post' action='/login'>");
+	res.write('<input type="email" name="email" placeholder="Enter email" />');
+	res.write(
+		'<input type="password" name="password" placeholder="Enter pass" />'
+	);
+	res.write('<button type="submit">Submit</button>');
+	res.write('</form>');
+	res.send();
+});
+app.post('/login', (req, res) => {
+	const { email, password } = req.body;
+	console.log(email, password)
+	const user1 = users.find(
+		(user) => user.email === email && user.password === password
+	);
+	console.log(user1);
+	if (user1) {
+		req.session.userId = user.id;
+		return res.redirect('/home');
+	} else {
+		return res.redirect('/fallback');
+	}
+});
+app.listen(3000, () => {
+	console.log('listening on 3000');
+});

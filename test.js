@@ -56,6 +56,10 @@
 // 	{ $set: { 'comments.$.message': 'Updating the message' } }
 // );
 
+// db.post.updateOne(
+// 	{ post_id: 1, 'comments.comment_id': 03 },
+// 	{ $pull: { comments: { comment_id: 03 } } }
+// );
 
 // db.user.insert({
 // 	firstName: 'Atharva',
@@ -80,4 +84,3 @@
 // 	email: 'palkin@ttn.com',
 // 	created_on: new Date(),
 // })
-
